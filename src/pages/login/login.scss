@@ -1,28 +1,22 @@
 page-login {
   .content {
-    background-color: #1a4a7e;
+    background-color: color($colors, primary);
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo-neppo {
+    padding: 5px 0 20px 0;
   }
 
   ion-img {
-    background: transparent !important;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border: 0;
-    margin-bottom: 10px;
+    background-color: transparent !important;
   }
 
-  #logo-neppo {
-    margin-bottom: 10px;
-  }
-
-  .form {
-    background-color: #fff;
-    border-radius: 5px;
-    height: 88%;
-  }
-
-  .bt-entrar {
+  form {
+    background-color: #FFF;
     border-radius: 5px;
   }
 }
