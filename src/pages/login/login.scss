@@ -5,13 +5,15 @@ page-login {
 
   ion-img {
     background: transparent !important;
-    width: 100px;
-    height: 100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-bottom: 20px;
     border: 0;
+    margin-bottom: 10px;
+  }
+
+  #logo-neppo {
+    margin-bottom: 10px;
   }
 
   .form {
