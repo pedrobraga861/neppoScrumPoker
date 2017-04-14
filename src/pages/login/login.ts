@@ -17,4 +17,8 @@ export class LoginPage {
     })
   }
 
+  submit() {
+    console.log(this.formLogin.value);
+  }
+
 }

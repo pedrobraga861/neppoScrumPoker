@@ -21,6 +21,6 @@
       </ion-item>
     </ion-list>
 
-    <button ion-button type="submit" [disabled]="!formLogin.valid" block>Entrar</button>
+    <button ion-button type="submit" [disabled]="!formLogin.valid" block (click)="submit()">Entrar</button>
   </form>
 </ion-content>
