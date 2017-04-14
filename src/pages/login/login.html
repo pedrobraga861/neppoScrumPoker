@@ -3,7 +3,7 @@
     <ion-img [width]="250" [height]="70" src="assets/img/logo-neppo.png" alt="Neppo"></ion-img>
   </div>
 
-  <form padding>
+  <form padding [formGroup]="formLogin" novalidate>
     <div class="logo">
       <ion-img [width]="250" [height]="115" src="assets/img/logo-app.png" alt="Scrum Poker Neppo"></ion-img>
     </div>
@@ -11,15 +11,16 @@
     <ion-list no-lines>
       <ion-item>
         <ion-label floating>Usuário</ion-label>
-        <ion-input name="username" type="text" spellcheck="false" autocapitalize="off" required></ion-input>
+        <ion-input name="username" type="text" spellcheck="false" autocapitalize="off"
+                   [formControl]="formLogin.controls['username']"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Senha</ion-label>
-        <ion-input name="password" type="password" required></ion-input>
+        <ion-input name="password" type="password" [formControl]="formLogin.controls['password']"></ion-input>
       </ion-item>
     </ion-list>
 
-    <button ion-button type="submit" block>Entrar</button>
+    <button ion-button type="submit" [disabled]="!formLogin.valid" block>Entrar</button>
   </form>
 </ion-content>
