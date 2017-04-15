@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { LoginPage } from "../pages/login/login";
+import {CadastroProjetoPage} from '../pages/cadastro-projeto/cadastro-projeto';
 import {CadastroEstoriaPage} from "../pages/cadastro-estoria/cadastro-estoria";
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -13,7 +14,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     LoginPage,
-    CadastroEstoriaPage
+    CadastroEstoriaPage,
+    CadastroProjetoPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     LoginPage,
-    CadastroEstoriaPage
+    CadastroEstoriaPage,
+    CadastroProjetoPage
   ],
   providers: [
     StatusBar,
