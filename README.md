@@ -7,7 +7,7 @@ Certifique-se que você tenha instalado o [NodeJs](https://nodejs.org/en/downloa
 
 Você precisará do Ionic CLI com suporte para aplicativos v2:
 ```bash
-$ npm install -g ionic && npm install -g cordova
+$ npm install -g cordova ionic
 ```
 
 Clone o projeto para sua máquina:
@@ -31,11 +31,11 @@ Para rodar o servidor e testar a aplicação, execute:
 $ ionic serve --lab
 ```
 
-Para depurar a aplicação você pode utilizar o Google Chrome, [veja neste tutorial](http://www.devmedia.com.br/depurando-javascript-com-google-chrome/28367).
+- Configurando seu computador para rodar aplicação
+Para configurar o seu computador acesse este [link](http://www.tiagoporto.com/blog/tutorial-de-configuracao-do-ambiente-ionic-android-no-windows/).
 
-Para testar a aplicação em seu celular, configure seu computador seguindo o tutorial da documentação do Cordova:
--[Android](https://cordova.apache.org/docs/en/latest/guide/platforms/android/)
--[IOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/)
+
+Para depurar a aplicação você pode utilizar o Google Chrome, [veja neste tutorial](http://www.devmedia.com.br/depurando-javascript-com-google-chrome/28367).
 
 Adicione a plataforma:
 ```bash
@@ -49,6 +49,11 @@ $ ionic run android -l -c --device
 Obs.: Para executar seu aplicativo, tudo o que você precisa fazer é [ativar a depuração USB e o Modo de desenvolvedor](https://developer.android.com/studio/run/device.html#developer-device-options) em seu dispositivo Android.
 
 Para debuggar a aplicação que esta rodando em seu celular, veja este [tutorial](https://www.codeproject.com/Tips/1030830/Debug-Ionic-Android-Application-On-Mobile-Devices) de como fazer.
+
+Você também pode fazer o build da aplicação onde será gerado um apk para instalação:
+```bash
+$ ionic build android
+```
 
 Mais informações podem ser encontradas na página do [Ionic](http://ionicframework.com/docs/v2/getting-started/).
 
