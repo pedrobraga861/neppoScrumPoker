@@ -152,34 +152,28 @@ Para aprender a como contribuir com o projeto, você pode acessar este [link](ht
 
 #### Resumindo o tutorial
 - Faça o fork do projeto e o clone local.
-
 - Crie um remoto upstream e sincronize com sua cópia local antes de criar o branch.
-
 - Faça um branch para cada pedaço separado de trabalho.
-
 - Faça as alterações, escreva boas mensagens de commit e leia o arquivo CONTRIBUTING quando ele existir.
-
 - Faça o push para seu repositório origin.
-
 - Crie em novo PR (Pull Request) no GitHub.
-
 - Responda a todos os feedbacks recebidos durante a revisão do código.
 
 # FAQ
--Commit:
+- Commit:
 São comentários que você faz para cada atualização em um arquivo.
 
--Branch:
+- Branch:
 Branch é um caminho que você cria, onde todas as alterações nos arquivos que são feitos quando você está em um determinado branch, não são modificadas nos demais branchs. Esses arquivos modificados ficam apenas no branch ao qual você vez os commits.
 
--Head:
+- Head:
 Denominado HEAD o branch ao qual você está no atualmente.
 
--Master:
+- Master:
 Master é o branch principal do projeto.
 
--Merge:
+- Merge:
 Um merge une vários commits em um unico commit e não exclui os commits unidos. Utilizado quando vamos unir um branch a outro.
 
--Rebase:
+- Rebase:
 Um rebase une vários commits em um unico commit e exclui os commits unidos.
