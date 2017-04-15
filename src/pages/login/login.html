@@ -14,10 +14,16 @@
         <ion-input name="username" type="text" spellcheck="false" autocapitalize="off"
                    [formControl]="formLogin.controls['username']"></ion-input>
       </ion-item>
+      <ion-item *ngIf="formLogin.get('username').errors && formLogin.get('username').dirty">
+        <p *ngIf="formLogin.get('username').hasError('required')">Campo obrigatório</p>
+      </ion-item>
 
       <ion-item>
         <ion-label floating>Senha</ion-label>
         <ion-input name="password" type="password" [formControl]="formLogin.controls['password']"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="formLogin.get('password').errors && formLogin.get('password').dirty">
+        <p *ngIf="formLogin.get('password').hasError('required')">Campo obrigatório</p>
       </ion-item>
     </ion-list>
 
