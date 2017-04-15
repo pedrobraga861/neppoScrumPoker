@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
+import {NavController, NavParams, MenuController} from 'ionic-angular';
 import {Validators, FormGroup, FormBuilder} from "@angular/forms";
 
 @Component({
@@ -10,7 +10,9 @@ export class CadastroProjetoPage {
   form: FormGroup;
   cartas = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public fb: FormBuilder) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public fb: FormBuilder, public menuCtrl: MenuController) {
+    menuCtrl.enable(false);
+
     this.cartas = [0, "1/2", 1, 2, 3, 5, 8, 13, 20, 40, 100, "?"];
 
     this.form = fb.group({
@@ -19,7 +21,7 @@ export class CadastroProjetoPage {
     })
   }
 
-  submite() {
+  submit() {
 
   }
 
