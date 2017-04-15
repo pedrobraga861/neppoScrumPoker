@@ -7,7 +7,10 @@ import {NavController, NavParams} from 'ionic-angular';
 })
 export class CadastroProjetoPage {
 
+  cartas = [];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.cartas = [0, "1/2", 1, 2, 3];
   }
 
   ionViewDidLoad() {
