@@ -12,7 +12,7 @@ import {CadastroProjetoPage} from '../pages/cadastro-projeto/cadastro-projeto';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = CadastroProjetoPage;
 
   pages: Array<{title: string, icon?: string, component: any}>;
 

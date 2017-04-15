@@ -1,26 +1,26 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>Cadastrar Projeto</ion-title>
-
-    <ion-buttons right>
-      <button ion-button icon-only>
-        <ion-icon name="checkmark-circle"></ion-icon>
-      </button>
-    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <form padding>
+  <form padding [formGroup]="form" novalidate>
     <ion-list no-lines>
       <ion-item>
         <ion-label floating>Nome Projeto</ion-label>
-        <ion-input name="nome" type="text"></ion-input>
+        <ion-input name="nome" type="text" [formControl]="form.controls['nome']"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="form.get('nome').errors && form.get('nome').dirty">
+        <p *ngIf="form.get('nome').hasError('required')">Campo obrigatório</p>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Descrição</ion-label>
-        <ion-textarea name="descricao"></ion-textarea>
+        <ion-textarea name="descricao" [formControl]="form.controls['descricao']"></ion-textarea>
+      </ion-item>
+      <ion-item *ngIf="form.get('descricao').errors && form.get('descricao').dirty">
+        <p *ngIf="form.get('descricao').hasError('required')">Campo obrigatório</p>
       </ion-item>
 
       <ion-item>
@@ -30,5 +30,7 @@
         </ion-select>
       </ion-item>
     </ion-list>
+
+    <button ion-button type="submit" [disabled]="!form.valid" block (click)="submit()">Salvar</button>
   </form>
 </ion-content>
