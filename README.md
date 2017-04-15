@@ -151,13 +151,19 @@ $ git checkout NOME_BRANCH
 Para aprender a como contribuir com o projeto, você pode acessar este [link](https://imasters.com.br/desenvolvimento/como-contribuir-com-um-projeto-no-github/), onde tem um tutorial explicando os passo a passo.
 
 #### Resumindo o tutorial
-1- Faça o fork do projeto e o clone local.
-2- Crie um remoto upstream e sincronize com sua cópia local antes de criar o branch.
-3- Faça um branch para cada pedaço separado de trabalho.
-4- Faça as alterações, escreva boas mensagens de commit e leia o arquivo CONTRIBUTING quando ele existir.
-5- Faça o push para seu repositório origin.
-6- Crie em novo PR (Pull Request) no GitHub.
-7- Responda a todos os feedbacks recebidos durante a revisão do código.
+- Faça o fork do projeto e o clone local.
+
+- Crie um remoto upstream e sincronize com sua cópia local antes de criar o branch.
+
+- Faça um branch para cada pedaço separado de trabalho.
+
+- Faça as alterações, escreva boas mensagens de commit e leia o arquivo CONTRIBUTING quando ele existir.
+
+- Faça o push para seu repositório origin.
+
+- Crie em novo PR (Pull Request) no GitHub.
+
+- Responda a todos os feedbacks recebidos durante a revisão do código.
 
 # FAQ
 -Commit:
